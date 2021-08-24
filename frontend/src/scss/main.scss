@@ -12,6 +12,7 @@
 @import '2-tools/hint';
 // @import '2-tools/hover';
 @import '2-tools/normalize';
+@import '2-tools/custom-scrollbar';
 
 //?3-BASICS
 
@@ -36,3 +37,7 @@
 @import '5-modules/header';
 
 //? 5-PAGES
+@import '6-pages/home-page';
+@import '../css/normalize.css';
+@import '../css/demo.css';
+@import '../css/component.css';

@@ -23,3 +23,6 @@
 @mixin boxShadow() {
   box-shadow: 0px 0px 21px 1px #e7e5ff;
 }
+@mixin flexi() {
+  display: flex;
+}

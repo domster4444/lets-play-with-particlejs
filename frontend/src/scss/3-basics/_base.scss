@@ -18,9 +18,10 @@ html {
 }
 body {
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-color: white;
+  background-color: rgb(60, 60, 61);
+}
+.st-content {
+  background-color: #000000;
 }
 
 // !remove blue background in mobile screen

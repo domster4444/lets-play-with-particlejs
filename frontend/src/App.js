@@ -2,9 +2,8 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
 //* #css-modules
-import './css/normalize.css';
-import './css/demo.css';
-import './css/component.css';
+
+import './scss/main.min.css';
 
 import { Route } from 'react-router-dom';
 //* @components

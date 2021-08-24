@@ -2,10 +2,6 @@
 .st-effect-11.st-container {
   min-height: 100vh;
 }
-body {
-  background: #444;
-  color: black;
-}
 
 /* thanks to Nicolas Gallagher  */
 .clearfix:before,
@@ -95,7 +91,7 @@ body {
 }
 
 .main {
-  max-width: 69em;
+  max-width: 100%;
   margin: 0 auto;
 }
 
