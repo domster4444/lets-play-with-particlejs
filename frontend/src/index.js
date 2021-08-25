@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
+
+import AnimatedCursor from 'react-animated-cursor';
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <CustomCursor
+      {/* <CustomCursor
         targets={['.link', '.your-css-selector']}
         customClass="custom-cursor"
         dimensions={30}
@@ -20,6 +23,15 @@ ReactDOM.render(
           opacity: 0.2,
         }}
         targetOpacity={0.5}
+      /> */}
+
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={25}
+        color="255, 255, 255"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={4}
       />
       <App />
     </Router>
