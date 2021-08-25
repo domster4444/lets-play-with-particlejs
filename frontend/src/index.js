@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
-import CustomCursor from 'custom-cursor-react';
-import 'custom-cursor-react/dist/index.css';
+
+//* --cursor pointer
+// import CustomCursor from 'custom-cursor-react';
+// import 'custom-cursor-react/dist/index.css';
 
 import AnimatedCursor from 'react-animated-cursor';
 

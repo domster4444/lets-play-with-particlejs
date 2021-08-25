@@ -17,7 +17,6 @@ import Service from './pages/Service/Service';
 
 //? rctbtstrp compo nts
 import Button from 'react-bootstrap/Button';
-
 function App() {
   return (
     <>
@@ -30,10 +29,16 @@ function App() {
               <div className="main clearfix">
                 <div id="st-trigger-effects">
                   {/* toolbar  */}
-                  <Button data-effect="st-effect-11">
-                    Scale &amp; rotate pusher
-                  </Button>
-
+                  <button
+                    class="hint--right hint--rounded hint--bounce"
+                    aria-label="Explore"
+                    id="hamburger-container-btn"
+                    data-effect="st-effect-11"
+                  >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </button>
                   {/* content starts here */}
                   <main className="App">
                     <Header />

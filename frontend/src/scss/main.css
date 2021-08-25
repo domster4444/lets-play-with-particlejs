@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! Flickity v2.2.2
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -212,7 +211,7 @@ https://flickity.metafizzy.co
   background: grey;
   color: white;
   padding: 8px 10px;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 12px;
   white-space: nowrap;
@@ -1279,58 +1278,16 @@ button {
   outline: none;
 }
 
-/*Button Two*/
-.button-two {
-  border-radius: 4px;
-  background-color: #e01e26;
-  border: none;
-  width: 200px;
-  transition: all 0.5s;
+.gradientBtn {
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.button-two {
-  margin-top: 5rem;
-  background-color: #e01e26;
-  outline: none;
+.gradientBtn:hover {
   color: white;
-  border: none;
-  border-radius: 3rem;
-  width: 21.7rem;
-  height: 5.2rem;
-  font-size: 2rem;
-  transition: all 700ms ease-in-out;
-}
-
-.button-two:active {
-  transition: all 10ms ease-in-out;
-  transform: scale(1.1);
-  color: white;
-  box-shadow: 0px 0px 20px 5px #c1ddf1;
-}
-
-.button-two span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-two span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-two:hover span {
-  padding-right: 25px;
-}
-
-.button-two:hover span:after {
-  opacity: 1;
-  right: 0;
+  background-image: linear-gradient(135deg, #0396ff 10%, #abdcff 100%);
 }
 
 @keyframes float {
@@ -1390,31 +1347,8 @@ button {
   }
 }
 
-.blueBtn {
-  border: none;
-  border-radius: 0.4rem;
-  color: white;
-  background: linear-gradient(45deg, lightblue 0%, blue 100%) !important;
-  height: 3.6rem;
-  width: 10rem;
-}
-
-.centerText {
-  text-align: center;
-}
-
-.dottedDesign {
-  top: 50vh;
-  position: absolute;
-  z-index: -1;
-}
-
 a {
   text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #e01e26;
 }
 
 a:visited {
@@ -1443,76 +1377,6 @@ a:visited {
 
 .inter_regular {
   font-weight: 400;
-}
-
-#navBar {
-  padding: 0.5rem 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#navBar nav {
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 65%;
-}
-
-@media (max-width: 1351px) {
-  #navBar nav {
-    width: 100%;
-  }
-}
-
-#navBar nav #logoBlock {
-  height: 100%;
-}
-
-#navBar nav #logoBlock img {
-  height: 100%;
-  width: 180px;
-}
-
-#navBar nav #menuBlock ul {
-  justify-content: center;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 788px) {
-  #navBar nav #menuBlock ul {
-    display: none;
-  }
-}
-
-#navBar nav #menuBlock ul li {
-  padding: 2rem 0rem;
-  color: black;
-  font-size: 2rem;
-  margin: 0rem 1.2rem;
-}
-
-#navBar nav #menuBlock ul #blueGhostBtn {
-  box-shadow: 0px 30px 30px 0px rgba(0, 11, 40, 0.1);
-  border-radius: 4rem;
-  padding: 1rem 4rem;
-  border: 1px solid #0065ff;
-  color: #0065ff;
-  transition: all 300ms ease-in-out;
-}
-
-#navBar nav #menuBlock ul #blueGhostBtn:active {
-  transition: all 10ms ease-in-out;
-  transform: scale(1.04);
 }
 
 #mainFooter {
@@ -1611,6 +1475,46 @@ a:visited {
   margin-bottom: 1.5rem;
 }
 
+#hamburger-container-btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 1rem 0rem 0rem 2rem;
+}
+
+#hamburger-container-btn div {
+  transition: all ease-in-out 600ms;
+  margin-top: 0.5rem;
+  background: white;
+}
+
+#hamburger-container-btn div:nth-child(1) {
+  height: 0.2rem;
+  width: 3.5rem;
+}
+
+#hamburger-container-btn div:nth-child(2) {
+  height: 0.2rem;
+  width: 2.7rem;
+}
+
+#hamburger-container-btn div:nth-child(3) {
+  height: 0.1rem;
+  width: 2rem;
+}
+
+#hamburger-container-btn:hover div:nth-child(1) {
+  width: 2rem;
+}
+
+#hamburger-container-btn:hover div:nth-child(2) {
+  width: 2.7rem;
+}
+
+#hamburger-container-btn:hover div:nth-child(3) {
+  width: 3.5rem;
+}
+
 #public-header {
   margin-top: 5rem;
   width: 100%;
@@ -1638,6 +1542,54 @@ a:visited {
   margin: 0rem 2rem;
 }
 
+.tag-block {
+  background-color: rgba(0, 148, 255, 0.26);
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  width: fit-content;
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+  flex-wrap: wrap;
+}
+
+.tag-block .dart-circle {
+  margin: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
 #home-page {
+  width: 100%;
+  height: 100%;
   color: white;
+  position: relative;
+}
+
+#home-page #particle-wrapper {
+  position: relative;
+}
+
+#home-page #particle-wrapper #content-hero-section {
+  position: absolute;
+  height: 100%;
+  top: 0rem;
+  overflow-y: hidden;
+  z-index: 100000000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section-left-division .title-heading {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-section-left-division .title-paragraph {
+  width: 40rem;
+  font-size: 1.7rem;
+  color: #7a8087;
 }

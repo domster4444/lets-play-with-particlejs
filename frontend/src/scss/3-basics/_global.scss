@@ -19,27 +19,3 @@
   display: flex;
   width: 75% !important;
 }
-
-// buttons
-.blueBtn {
-  border: none;
-  border-radius: 0.4rem;
-  color: $primary_white;
-  background: linear-gradient(
-    45deg,
-    $primary_lightblue 0%,
-    $primary_blue 100%
-  ) !important;
-  height: 3.6rem;
-  width: 10rem;
-}
-
-.centerText {
-  text-align: center;
-}
-
-.dottedDesign {
-  top: 50vh;
-  position: absolute;
-  z-index: -1;
-}

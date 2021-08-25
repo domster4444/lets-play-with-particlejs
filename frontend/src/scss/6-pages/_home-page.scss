@@ -1,3 +1,43 @@
 #home-page {
+  width: 100%;
+  height: 100%;
   color: white;
+
+  position: relative;
+  #particle-wrapper {
+    position: relative;
+    // background-color: red;
+    #content-hero-section {
+      position: absolute;
+      // background-color: olive;
+      height: 100%;
+      top: 0rem;
+      overflow-y: hidden;
+      z-index: 100000000 !important;
+
+      @include flexi;
+      align-items: center;
+      justify-content: space-between;
+      #hero-content {
+      }
+    }
+
+    .tsparticles-canvas-el {
+      // background-color: blue;
+    }
+  }
+}
+
+.hero-section-left-division {
+  .title-heading {
+    font-size: 3rem;
+    color: white;
+  }
+  .title-paragraph {
+    width: 40rem;
+    font-size: 1.7rem;
+    color: rgb(122, 128, 135);
+  }
+}
+.hero-section-right-division {
 }
