@@ -10,7 +10,7 @@ const Header = () => {
             <nav>
               <ul id="left-nav">
                 <li>
-                  <Link className="inter_regular" to="/">
+                  <Link className="link inter_regular" to="/">
                     Logo
                   </Link>
                 </li>
