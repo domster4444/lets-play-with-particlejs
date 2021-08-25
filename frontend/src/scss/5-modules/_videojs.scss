@@ -1,0 +1,17 @@
+.video-js {
+}
+.vjs-poster {
+}
+
+.video-js .vjs-big-play-button {
+  border-radius: 50% !important;
+  border: 3px solid white !important;
+  height: 5rem !important;
+  width: 5rem !important;
+  outline: none !important;
+  background-image: linear-gradient(
+    135deg,
+    #abdcff 10%,
+    #0396ff 100%
+  ) !important;
+}

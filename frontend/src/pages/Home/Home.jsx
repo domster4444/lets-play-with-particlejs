@@ -8,7 +8,15 @@ import { BsArrowRight } from 'react-icons/bs';
 
 // react btstrp
 import Button from 'react-bootstrap/Button';
+
+// video js
+import VideoPlayer from 'react-video-js-player';
+import communityVdo from '../../video/video.mp4';
+import ddcVdoThumbnail from '../../img/Video/video-thumbnail/ddc-text.png';
+
 const Home = () => {
+  const videoSrc = communityVdo;
+  const poster = ddcVdoThumbnail;
   return (
     <>
       <div className="containerCenter">
@@ -49,11 +57,14 @@ const Home = () => {
                 </div>
               </div>
             </section>
-            <section>
-              <h2>OTHER SECTION</h2>
-              <h2>OTHER SECTION</h2>
-              <h2>OTHER SECTION</h2>
-              <h2>OTHER SECTION</h2>
+            <section id="video-section">
+              <VideoPlayer
+                src={videoSrc}
+                poster={poster}
+                width="720"
+                height="720"
+                playbackRates={[0.5, 1, 1.5, 2]}
+              />
             </section>
           </main>
         </div>
