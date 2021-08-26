@@ -41,3 +41,19 @@
 }
 .hero-section-right-division {
 }
+
+#video-section {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+}
+
+#info-card-section {
+  width: 100%;
+
+  @include flexi();
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

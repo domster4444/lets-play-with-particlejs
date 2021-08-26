@@ -1228,6 +1228,30 @@ body::-webkit-scrollbar-thumb {
   font-size: 10px;
 }
 
+@media (max-width: 900px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    font-size: 1vw;
+  }
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -1290,6 +1314,22 @@ button {
   background-image: linear-gradient(135deg, #0396ff 10%, #abdcff 100%);
 }
 
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -1348,6 +1388,7 @@ button {
 }
 
 a {
+  color: #0063ab;
   text-decoration: none;
 }
 
@@ -1561,6 +1602,11 @@ a:visited {
   font-size: 0.8rem;
 }
 
+.vjs-poster {
+  border-radius: 2rem;
+  border: 1px solid white;
+}
+
 .video-js .vjs-big-play-button {
   border-radius: 50% !important;
   border: 3px solid white !important;
@@ -1568,6 +1614,59 @@ a:visited {
   width: 5rem !important;
   outline: none !important;
   background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%) !important;
+}
+
+/* Ripple effect */
+.video-js .vjs-big-play-button {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.video-js .vjs-big-play-button:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.video-js .vjs-big-play-button:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.vjs-icon-play:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.info-card {
+  width: 25rem;
+  padding: 2rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .info-card {
+    width: 30rem;
+  }
+}
+
+.info-card img {
+  width: 100%;
+}
+
+.info-card h2 {
+  margin-top: 1.5rem;
+}
+
+.info-card p {
+  margin-top: 1.5rem;
+  color: #7a8087;
+  font-size: 1.5rem;
+}
+
+.info-card a {
+  font-size: 1.5rem;
 }
 
 #home-page {
@@ -1601,4 +1700,19 @@ a:visited {
   width: 40rem;
   font-size: 1.7rem;
   color: #7a8087;
+}
+
+#video-section {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+}
+
+#info-card-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

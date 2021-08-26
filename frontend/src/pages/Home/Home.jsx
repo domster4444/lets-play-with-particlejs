@@ -14,6 +14,9 @@ import VideoPlayer from 'react-video-js-player';
 import communityVdo from '../../video/video.mp4';
 import ddcVdoThumbnail from '../../img/Video/video-thumbnail/ddc-text.png';
 
+//images
+import dummyCardTemplate from '../../img/cardThumbnail/dummyCardTemplate.png';
+import InfoCard from '../../components01/2molecules/InfoCard';
 const Home = () => {
   const videoSrc = communityVdo;
   const poster = ddcVdoThumbnail;
@@ -48,7 +51,7 @@ const Home = () => {
                       create performant and reliable collaborative experiences
                       in minutes.
                     </p>
-                    <Button className="gradientBtn">
+                    <Button className="gradientBtn ripple">
                       Start now <BsArrowRight />
                     </Button>
                   </div>
@@ -57,11 +60,35 @@ const Home = () => {
                 </div>
               </div>
             </section>
+
             <section id="video-section">
               <VideoPlayer
                 src={videoSrc}
                 poster={poster}
                 playbackRates={[0.5, 1, 1.5, 2]}
+              />
+            </section>
+
+            <section id="info-card-section">
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
               />
             </section>
           </main>

@@ -5,6 +5,18 @@
 }
 :root {
   font-size: 10px;
+  @include media('<=900px') {
+    font-size: 8px;
+  }
+  @include media('<=600px') {
+    font-size: 6px;
+  }
+  @include media('<=400px') {
+    font-size: 5px;
+  }
+  @include media('>=1800px') {
+    font-size: 1vw;
+  }
 }
 .cursor {
   cursor: pointer;
