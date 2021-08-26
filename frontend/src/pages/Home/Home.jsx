@@ -61,8 +61,6 @@ const Home = () => {
               <VideoPlayer
                 src={videoSrc}
                 poster={poster}
-                width="720"
-                height="720"
                 playbackRates={[0.5, 1, 1.5, 2]}
               />
             </section>
