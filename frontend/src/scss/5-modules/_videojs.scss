@@ -2,12 +2,11 @@
 }
 .vjs-poster {
   border-radius: 2rem;
-  border: 1px solid white;
+  border: 1px solid rgb(50, 49, 49);
 }
 
 .video-js .vjs-big-play-button {
   border-radius: 50% !important;
-  border: 3px solid white !important;
   height: 5rem !important;
   width: 5rem !important;
   outline: none !important;
@@ -40,4 +39,8 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.video-js[tabindex='-1'] {
+  width: 100%;
 }

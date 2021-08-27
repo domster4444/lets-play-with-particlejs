@@ -5,6 +5,8 @@ import ParticleConfig from '../../config/particle-config';
 
 // react icons
 import { BsArrowRight } from 'react-icons/bs';
+import { AiOutlineTwitter, AiOutlineGithub } from 'react-icons/ai';
+import { FaLinkedin } from 'react-icons/fa';
 
 // react btstrp
 import Button from 'react-bootstrap/Button';
@@ -22,9 +24,9 @@ const Home = () => {
   const poster = ddcVdoThumbnail;
   return (
     <>
-      <div className="containerCenter">
-        <div className="contentBlock">
-          <main id="home-page">
+      <main id="home-page">
+        <div className="containerCenter" id="particle-section-wrapper">
+          <div className="contentBlock">
             <section id="particle-wrapper">
               <Particles
                 style={{ height: '20%' }}
@@ -60,7 +62,10 @@ const Home = () => {
                 </div>
               </div>
             </section>
-
+          </div>
+        </div>
+        <div className="containerCenter" id="video-section-wrapper">
+          <div className="contentBlock">
             <section id="video-section">
               <VideoPlayer
                 src={videoSrc}
@@ -68,7 +73,10 @@ const Home = () => {
                 playbackRates={[0.5, 1, 1.5, 2]}
               />
             </section>
-
+          </div>
+        </div>
+        <div className="containerCenter" id="info-card-section-wrapper">
+          <div className="contentBlock">
             <section id="info-card-section">
               <InfoCard
                 image={dummyCardTemplate}
@@ -90,10 +98,92 @@ const Home = () => {
                 title=" Add live cursors and avatars to your product"
                 description=" Add live cursors and avatars to your product"
               />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+              <InfoCard
+                image={dummyCardTemplate}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
             </section>
-          </main>
+          </div>
         </div>
-      </div>
+        <div className="containerCenter" id="footer-section-wrapper">
+          <div className="contentBlock">
+            <footer>
+              <div className="inter_regular">
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+                <ul>
+                  <li>Product</li>
+                  <li>Presence</li>
+                  <li>Storage</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <AiOutlineTwitter />
+                  </li>
+                  <li>
+                    <FaLinkedin />
+                  </li>
+                  <li>
+                    <AiOutlineGithub />
+                  </li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </main>
     </>
   );
 };

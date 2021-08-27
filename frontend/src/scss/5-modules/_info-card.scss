@@ -1,23 +1,23 @@
-.info-card {
-  width: 25rem;
-  @include media('<=900px') {
-    width: 30rem;
-  }
+// .info-card {
+//   width: 25rem;
+//   @include media('<=900px') {
+//     width: 30rem;
+//   }
 
-  //   border: 1px solid white;
-  padding: 2rem 2rem;
-  img {
-    width: 100%;
-  }
-  h2 {
-    margin-top: 1.5rem;
-  }
-  p {
-    margin-top: 1.5rem;
-    color: #7a8087;
-    font-size: 1.5rem;
-  }
-  a {
-    font-size: 1.5rem;
-  }
-}
+//   //   border: 1px solid white;
+//   padding: 2rem 2rem;
+//   img {
+//     width: 100%;
+//   }
+//   h2 {
+//     margin-top: 1.5rem;
+//   }
+//   p {
+//     margin-top: 1.5rem;
+//     color: #7a8087;
+//     font-size: 1.5rem;
+//   }
+//   a {
+//     font-size: 1.5rem;
+//   }
+// }

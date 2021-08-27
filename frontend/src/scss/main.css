@@ -1583,33 +1583,13 @@ a:visited {
   margin: 0rem 2rem;
 }
 
-.tag-block {
-  background-color: rgba(0, 148, 255, 0.26);
-  padding: 0.2rem 1rem;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  width: fit-content;
-  display: flex;
-  justify-content: "center";
-  align-items: "center";
-  flex-wrap: wrap;
-}
-
-.tag-block .dart-circle {
-  margin: 0rem 0.5rem;
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-}
-
 .vjs-poster {
   border-radius: 2rem;
-  border: 1px solid white;
+  border: 1px solid #323131;
 }
 
 .video-js .vjs-big-play-button {
   border-radius: 50% !important;
-  border: 3px solid white !important;
   height: 5rem !important;
   width: 5rem !important;
   outline: none !important;
@@ -1640,33 +1620,13 @@ a:visited {
   justify-content: center !important;
 }
 
-.info-card {
-  width: 25rem;
-  padding: 2rem 2rem;
-}
-
-@media (max-width: 900px) {
-  .info-card {
-    width: 30rem;
-  }
-}
-
-.info-card img {
+.video-js[tabindex='-1'] {
   width: 100%;
 }
 
-.info-card h2 {
-  margin-top: 1.5rem;
-}
-
-.info-card p {
-  margin-top: 1.5rem;
-  color: #7a8087;
-  font-size: 1.5rem;
-}
-
-.info-card a {
-  font-size: 1.5rem;
+section,
+footer {
+  margin-top: 2.5rem;
 }
 
 #home-page {
@@ -1709,10 +1669,60 @@ a:visited {
   justify-content: center !important;
 }
 
+#info-card-section-wrapper {
+  background: #14161b;
+}
+
 #info-card-section {
+  padding: 5rem 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#info-card-section img {
+  transition: all ease 0.6s;
+}
+
+@media (max-width: 1073px) {
+  #info-card-section {
+    justify-content: center;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div:nth-child(4) ul {
+  display: flex;
+}
+
+footer div:nth-child(4) ul li {
+  margin: -0.5rem 0.5rem;
+  color: #7a8087;
+  font-size: 2rem;
+}
+
+footer div ul {
+  list-style: none;
+}
+
+footer div li {
+  font-size: 1.4rem;
+  color: #7a8087;
+}
+
+footer div li:nth-child(1) {
+  color: white;
+  font-weight: bold;
+}
+
+footer div ul:nth-child(2) {
+  margin-top: 2rem;
 }
