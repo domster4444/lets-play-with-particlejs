@@ -1210,7 +1210,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: lightsteelblue;
+  background-color: black;
   border: 2px solid #eff1f5;
 }
 
@@ -1670,7 +1670,7 @@ footer {
 }
 
 #info-card-section-wrapper {
-  background: #14161b;
+  background: #14161b96;
 }
 
 #info-card-section {

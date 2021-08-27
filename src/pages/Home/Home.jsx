@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Particles from 'react-particles-js';
 import TagBlock from '../../components01/1atoms/TagBlock';
 import ParticleConfig from '../../config/particle-config';
@@ -19,6 +19,7 @@ import ddcVdoThumbnail from '../../img/Video/video-thumbnail/ddc-text.png';
 //images
 import dummyCardTemplate from '../../img/cardThumbnail/dummyCardTemplate.png';
 import InfoCard from '../../components01/2molecules/InfoCard';
+
 const Home = () => {
   const videoSrc = communityVdo;
   const poster = ddcVdoThumbnail;

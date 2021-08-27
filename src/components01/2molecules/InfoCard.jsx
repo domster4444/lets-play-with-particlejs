@@ -8,7 +8,8 @@ const Infocard = styled.a`
   width: 25rem;
   text-decoration: none;
   border: 1px solid rgb(50, 49, 49);
-  padding: 2rem 2rem;
+  border-radius:2rem;
+padding: 2rem 2rem;
   transition: all 0.6s ease;
   &:hover {
     transition: all 0.2s ease;

@@ -1,3 +1,5 @@
+import React, { Suspense, lazy } from 'react';
+
 // import logo from './logo.svg';
 import './App.css';
 
@@ -16,7 +18,7 @@ import Home from './pages/Home/Home';
 import Service from './pages/Service/Service';
 
 //? rctbtstrp compo nts
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 function App() {
   return (
     <>
