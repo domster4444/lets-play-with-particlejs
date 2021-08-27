@@ -1,9 +1,9 @@
 /*! Flickity v2.2.2
 https://flickity.metafizzy.co
 ---------------------------------------------- */
-@import url(c:\Users\kshitiz\Desktop\DDC-Portal\frontend\src\css\normalize.css);
-@import url(c:\Users\kshitiz\Desktop\DDC-Portal\frontend\src\css\demo.css);
-@import url(c:\Users\kshitiz\Desktop\DDC-Portal\frontend\src\css\component.css);
+@import url(c:\Users\kshitiz\Desktop\DDC-Portal\src\css\normalize.css);
+@import url(c:\Users\kshitiz\Desktop\DDC-Portal\src\css\demo.css);
+@import url(c:\Users\kshitiz\Desktop\DDC-Portal\src\css\component.css);
 .flickity-enabled {
   position: relative;
 }
@@ -1243,12 +1243,6 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 400px) {
   :root {
     font-size: 5px;
-  }
-}
-
-@media (min-width: 1800px) {
-  :root {
-    font-size: 1vw;
   }
 }
 
