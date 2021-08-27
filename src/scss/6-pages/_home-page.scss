@@ -9,6 +9,7 @@ footer {
 
   position: relative;
   #particle-wrapper {
+    width: 100%;
     position: relative;
     // background-color: red;
     #content-hero-section {
@@ -63,9 +64,9 @@ footer {
   padding: 5rem 0;
   width: 100%;
   @include flexi();
-  justify-content: space-between;
+  justify-content: center;
   @include media('<=1073px') {
-    justify-content: center;
+    // justify-content: center;
   }
   align-items: center;
   flex-wrap: wrap;
@@ -75,7 +76,7 @@ footer {
   width: 100%;
   padding: 1rem 0.5rem;
 
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   //4th col
   div:nth-child(4) {

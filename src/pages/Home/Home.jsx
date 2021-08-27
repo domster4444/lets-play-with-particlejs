@@ -18,6 +18,8 @@ import ddcVdoThumbnail from '../../img/Video/video-thumbnail/ddc-text.png';
 
 //images
 import dummyCardTemplate from '../../img/cardThumbnail/dummyCardTemplate.png';
+import ReactLogo from '../../img/cardThumbnail/react.jpeg';
+// component
 import InfoCard from '../../components01/2molecules/InfoCard';
 
 const Home = () => {
@@ -80,42 +82,60 @@ const Home = () => {
           <div className="contentBlock">
             <section id="info-card-section">
               <InfoCard
-                image={dummyCardTemplate}
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
+                title=" Add live cursors and avatars to your product"
+                description=" Add live cursors and avatars to your product"
+              />
+
+              <InfoCard
+                image={ReactLogo}
                 title=" Add live cursors and avatars to your product"
                 description=" Add live cursors and avatars to your product"
               />
               <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
-                title=" Add live cursors and avatars to your product"
-                description=" Add live cursors and avatars to your product"
-              />
-              <InfoCard
-                image={dummyCardTemplate}
+                image={ReactLogo}
                 title=" Add live cursors and avatars to your product"
                 description=" Add live cursors and avatars to your product"
               />
