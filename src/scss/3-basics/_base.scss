@@ -14,9 +14,9 @@
   @include media('<=400px') {
     font-size: 5px;
   }
-  // @include media('>=1800px') {
-  //   font-size: 1vw;
-  // }
+  @include media('>=1800px') {
+    font-size: 0.5vw;
+  }
 }
 .cursor {
   cursor: pointer;
