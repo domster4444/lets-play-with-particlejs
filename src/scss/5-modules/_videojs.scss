@@ -1,0 +1,46 @@
+.video-js {
+}
+.vjs-poster {
+  border-radius: 2rem;
+  border: 1px solid rgb(50, 49, 49);
+}
+
+.video-js .vjs-big-play-button {
+  border-radius: 50% !important;
+  height: 5rem !important;
+  width: 5rem !important;
+  outline: none !important;
+  background-image: linear-gradient(
+    135deg,
+    #abdcff 10%,
+    #0396ff 100%
+  ) !important;
+}
+
+/* Ripple effect */
+.video-js .vjs-big-play-button {
+  background-position: center;
+  transition: background 0.8s;
+}
+.video-js .vjs-big-play-button:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
+}
+.video-js .vjs-big-play-button:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+// play btn's inner tranglular obj
+.vjs-icon-play:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.video-js[tabindex='-1'] {
+  width: 100%;
+}

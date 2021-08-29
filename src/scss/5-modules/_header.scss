@@ -1,0 +1,35 @@
+#public-header {
+  margin-top: 5rem;
+  width: 100%;
+  nav {
+    // background-color: red;
+
+    @include flexi();
+    justify-content: space-between;
+    ul {
+      @include flexi();
+      list-style: none;
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+    ul:nth-child(1) {
+      li {
+        img {
+        }
+      }
+    }
+    ul:nth-child(2) {
+      li {
+        margin: 0rem 2rem;
+      }
+    }
+    ul:nth-child(2) {
+      li {
+        margin: 0rem 2rem;
+      }
+    }
+  }
+}
